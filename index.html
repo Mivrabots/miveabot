@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mivra - Your Ultimate Discord Bot</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #0779e4 3px solid;
+        }
+        header h1 {
+            float: left;
+            margin-top: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        header ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        header ul li {
+            display: inline;
+            margin-left: 5px;
+        }
+        header ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        header ul li a:hover {
+            color: #0779e4;
+        }
+        #hero {
+            background: #0779e4;
+            color: #fff;
+            padding: 60px 0;
+            text-align: center;
+        }
+        #hero h2 {
+            margin-top: 0;
+            font-size: 50px;
+        }
+        #hero p {
+            font-size: 20px;
+        }
+        #hero .btn {
+            display: inline-block;
+            color: #fff;
+            background: #333;
+            padding: 10px 20px;
+            text-decoration: none;
+            margin-top: 20px;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+        #hero .btn:hover {
+            background: #444;
+        }
+        section {
+            padding: 40px 0;
+        }
+        #features .features-grid {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .feature-item {
+            background: #fff;
+            padding: 20px;
+            margin: 10px;
+            flex: 1;
+            min-width: 200px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .feature-item h3 {
+            margin-top: 0;
+        }
+        #commands {
+            background: #fff;
+            padding: 20px;
+            margin: 10px 0;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        #commands h2 {
+            margin-top: 0;
+        }
+        #commands ul {
+            list-style: none;
+            padding: 0;
+        }
+        #commands ul li {
+            background: #f9f9f9;
+            padding: 15px;
+            margin: 10px 0;
+            border-left: 5px solid #0779e4;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #commands ul li:nth-child(odd) {
+            background: #f1f1f1;
+        }
+        #commands ul li span {
+            font-weight: bold;
+            color: #555;
+        }
+        .btn {
+            display: inline-block;
+            background: #0779e4;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #055ea3;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        footer ul {
+            list-style: none;
+            padding: 0;
+        }
+        footer ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        footer ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        footer ul li a:hover {
+            color: #0779e4;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Mivra</h1>
+            <nav>
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#commands">Commands</a></li>
+                    <li><a href="https://discord.com/oauth2/authorize?client_id=1225992375059349514">Invite</a></li>
+                    <li><a href="https://discord.gg/8a2hb8KeZQ">Support</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h2>The Ultimate Discord Bot</h2>
+            <p>Enhance your Discord experience with Mivra's powerful features and easy-to-use commands.</p>
+            <a href="https://discord.com/oauth2/authorize?client_id=1225992375059349514" class="btn">Invite Mivra</a>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="container">
+            <h2>Features</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <h3>Music Playback(are being made)</h3>
+                    <p>Stream your favorite songs directly in your Discord server.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Moderation Tools</h3>
+                    <p>Keep your server safe with advanced moderation commands.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Custom Commands(are being made)</h3>
+                    <p>Create your own commands to suit your server's needs.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Fun and Games</h3>
+                    <p>Engage your community with fun games and activities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="commands">
+        <div class="container">
+            <h2>Commands</h2>
+            <ul>
+                <li><span>!warn &lt;member&gt; [reason]</span> - Warn a member</li>
+                <li><span>!warnings &lt;member&gt;</span> - View warnings for a member</li>
+                <li><span>!clearwarnings &lt;member&gt;</span> - Clear all warnings for a member</li>
+                <li><span>!lock</span> - Lock the server</li>
+                <li><span>!unlock</span> - Unlock the server</li>
+                <li><span>!nick &lt;member&gt; [new_nickname]</span> - Change the nickname of a member</li>
+                <li><span>!echo [message]</span> - Make the bot say something</li>
+                <li><span>!rps [choice]</span> - Play rock-paper-scissors with the bot</li>
+                <li><span>!eightball [question]</span> - Ask the magic 8-ball a question</li>
+                <li><span>!coinflip</span> - Flip a coin</li>
+                <li><span>!roll [sides]</span> - Roll a die</li>
+                <li><span>!cat</span> - Get a random cat picture</li>
+                <li><span>!dog</span> - Get a random dog picture</li>
+                <li><span>!meme</span> - Get a random meme</li>
+                <li><span>!joke</span> - Get a random joke</li>
+                <li><span>!quote</span> - Get a random quote</li>
+                <li><span>!tictactoe &lt;opponent&gt;</span> - Play tic-tac-toe with another member</li>
+                <li><span>!botcommands</span> - Show this menu</li>
+                <li><span>!modlog</span> - View the moderation log</li>
+                <li><span>!ban &lt;member&gt; [reason]</span> - Ban a member</li>
+                <li><span>!unban &lt;member_id&gt;</span> - Unban a member</li>
+                <li><span>!kick &lt;member&gt; [reason]</span> - Kick a member</li>
+                <li><span>!mute &lt;member&gt; [reason]</span> - Mute a member</li>
+                <li><span>!unmute &lt;member&gt;</span> - Unmute a member</li>
+            </ul>
+        </div>
+    </section>
+
+  
